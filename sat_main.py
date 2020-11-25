@@ -28,7 +28,7 @@ def predict(file_n, complexity, formulas_number):
             cnf2 = chunkIt(example.features.feature["inputs"].float_list.value, m) #split examp: [0,1,2,3,4,5] into [0,1], [2,3], [4,5]
 
             J, h =  ising_params(m, n, cnf2)
-
+            
 
             out = pycosat.solve(cnf2) != 'UNSAT'
             bin_vector_dw.append(out)

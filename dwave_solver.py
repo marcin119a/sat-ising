@@ -4,9 +4,9 @@ from dwave.system.composites import EmbeddingComposite
 
 from utilities import data_to_matrix, ising_params
 
-def dw_solve(formulas, N, alpha):
-    matrix = data_to_matrix(alpha, N, formulas)
-    J, h = ising_params(alpha, N, matrix)
+def dw_solve(formulas, N, m):
+    matrix = data_to_matrix(m, N, formulas)
+    J, h = ising_params(m, N, matrix)
     token = ""
 
     h2  = { i: k for i, k in enumerate(h) }
