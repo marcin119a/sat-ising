@@ -1,0 +1,6 @@
+dwave-system
+pycosat
+wildqat
+dwave-cloud-client
+tensorflow==1.13.1
+mlflow
