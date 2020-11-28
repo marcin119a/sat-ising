@@ -72,4 +72,11 @@ def predict(file_n, complexity, formulas_number):
 
     return (bin_vector_dw, test_set)
 
-predict('sr_50/train_1000_sr_50.tfrecord', complexity=50, formulas_number=100)
+predict('sr_50/train_1000_sr_50.tfrecord', complexity=50, formulas_number=1000)
+predict('sr_20/train_10000_sr_20.tfrecord', complexity=20, formulas_number=1000)
+predict('sr_30/train_1000_sr_30.tfrecord', complexity=30,  formulas_number=1000)
+predict('sr_100/test_1000_sr_100.tfrecord', complexity=100,  formulas_number=1000)
+predict('sr_300/test_21021_sr_300.tfrecord', complexity=300,  formulas_number=1000)
+predict('sr_500/test_2121_sr_500.tfrecord', complexity=500,  formulas_number=1000)
+predict('sr_700/test_2131_sr_700.tfrecord', complexity=700,  formulas_number=1000)
+predict('sr_1000/test_12321_sr_1000.tfrecord', complexity=1000,  formulas_number=1000)
